@@ -1,9 +1,3 @@
-const year = document.getElementById('yr');
-
-if (year) {
-  year.textContent = new Date().getFullYear();
-}
-
 document.querySelectorAll('[data-search-input]').forEach((input) => {
   const list = document.querySelector(input.getAttribute('aria-controls') || '[data-search-list]');
 
