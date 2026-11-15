@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Browse and search Your Name's software, hardware, and technical work samples.">
+  <title>Work Samples — Your Name</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a href="index.html#top" class="brand" aria-label="Your Name home">
+      <div class="avatar" aria-hidden="true">YN</div>
+      <span class="brand-text">
+        <strong>Your Name</strong>
+        <small>Technical portfolio</small>
+      </span>
+    </a>
+
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="work.html" aria-current="page">Work</a>
+      <a href="writeups.html">Writeups</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <a class="back-link" href="index.html#top">← Back to portfolio</a>
+    <section class="search-page" aria-labelledby="page-heading">
+      <header class="page-intro">
+        <p class="eyebrow">Portfolio archive</p>
+        <h1 id="page-heading">Work Samples</h1>
+        <p>Browse projects and practical work across software, hardware, and technical process. Search by title, topic, or skill as the collection grows.</p>
+      </header>
+
+      <label class="search-tools" for="work-search">Search work samples
+        <input id="work-search" type="search" placeholder="Try software, hardware, or a project name" autocomplete="off" data-search-input>
+      </label>
+      <p class="result-count" data-result-count aria-live="polite"></p>
+
+      <ul class="cards" data-search-list>
+        <li data-search-item>
+          <span class="card-title">Work samples are on the way</span>
+          <p class="card-description">New projects will be added here with a short summary, the tools used, and what was learned.</p>
+          <ul class="card-meta" aria-label="Topics">
+            <li>Software</li>
+            <li>Hardware</li>
+            <li>Process</li>
+          </ul>
+        </li>
+      </ul>
+      <p class="empty-results" data-search-empty hidden>No work samples match that search. Try another title, topic, or skill.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    © <span id="yr"></span> Your Name — Personal portfolio.
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

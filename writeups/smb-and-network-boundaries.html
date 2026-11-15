@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A defensive overview of SMB file sharing and network boundaries.">
+  <title>SMB Servers and Network Boundaries — Your Name</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a href="../index.html#top" class="brand" aria-label="Your Name home">
+      <span class="avatar" aria-hidden="true">YN</span>
+      <span class="brand-text">
+        <strong>Your Name</strong>
+        <small>Technical portfolio</small>
+      </span>
+    </a>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="../work.html">Work</a>
+      <a href="../writeups.html" aria-current="page">Writeups</a>
+      <a href="../index.html#about">About</a>
+      <a href="../index.html#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <a class="back-link" href="../writeups.html">← All writeups</a>
+    <article class="article-page">
+      <header class="page-intro">
+        <p class="eyebrow">SMB · Networks</p>
+        <h1>Local SMB Servers and Lateral Movement</h1>
+      </header>
+      <p>SMB is commonly used to share files and printers on a local network. A share can be useful, but it also creates a place where permissions and account security matter: people and devices should only have the access they need.</p>
+      <h2>Think about boundaries</h2>
+      <p>If one device or account is compromised, broad access to other shared resources can make the impact larger. Separate networks, careful share permissions, and individual accounts help limit how far a problem can spread.</p>
+      <h2>Practical administration</h2>
+      <p>Review which shares are enabled, remove access that is no longer needed, keep systems updated, and monitor relevant security logs. Turn off file sharing where it is not required, especially on networks you do not trust.</p>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    © <span id="yr"></span> Your Name — Personal portfolio.
+  </footer>
+  <script src="../js/main.js"></script>
+</body>
+</html>
